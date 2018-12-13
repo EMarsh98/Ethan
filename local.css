@@ -2,17 +2,24 @@ body{
 	color:white;
 }
 
-.sideLabel{
+#header{
+	background-image:url('images/stars.jpg');
+	background-attachment:fixed;
+}
 
+#header h1{
+	color:white;
+	font-size: 5em;
+	padding: 70px 0px 0px 30px;
+}
+
+#main-content{
+	color:white;
 }
 
 .carousel-item{
 	height:40em;
 	padding-top:30px;
-	color:white;
-}
-
-#main-content{
 	color:white;
 }
 

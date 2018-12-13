@@ -10,7 +10,8 @@ $( document ).ready(function() {
 	link3.style.transition = "font-size 0.25s";
 	
 	$('#mainslide').carousel({
-		interval: false
+		interval: false,
+		arrows: false
 	});
 	
 	function checkSelect(){
