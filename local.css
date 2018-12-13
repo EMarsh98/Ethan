@@ -3,6 +3,7 @@ body{
 }
 
 #header{
+	height:60em;
 	background-image:url('images/stars.jpg');
 	background-attachment:fixed;
 }
