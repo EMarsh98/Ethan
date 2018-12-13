@@ -1,16 +1,92 @@
 <!doctype html>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>Ethan.com</title>
 
 <link rel="stylesheet" href="local.css">
-<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.css">
+
 </head>
 <body>
-
+<div class="container-fluid">
+<div class="row">
+	<div class="col-lg-2 bg-primary">
+		<ul class="nav flex-column">
+			<li class="nav-item">
+				<a id="0" class="nav-link sideLabel active" data-target="#mainslide" data-slide-to="0" >About Myself</a>
+			</li>
+			<li class="nav-item">
+				<a id="1" class="nav-link sideLabel" data-target="#mainslide" data-slide-to="1" >Glace Bay Food Bank</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link sideLabel" >Contact Me</a>
+			</li>
+		</ul>
+	</div>
+	<div id="main-content" class="col-lg-10 bg-secondary">
+		<!--<div id="GBFB" class="container">
+		<div class="row">
+			<div class="col-lg-5">
+				<img src="gbfbScreen.png" alt="" style="width:450px;height:350px;">
+			</div>
+			
+			<div class="col-lg-7">
+				<h1>The Glace Bay Food Bank</h1>
+				<p>This was a project assigned to myself and a team of other students at NSCC. We had to develop a website for a local foodbank. My responsibilities involved making sure the site looked good on mobile devices.</p>
+				<a href="http://glacebayfoodbank.seaside.ns.ca" class="btn btn-primary">Check it out</a>
+			</div>
+		</div>
+		</div>-->
+		
+		
+		<div id="mainslide" class="carousel vert slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="container">
+					<div class="row">
+						<div class="col-lg-3">
+							<img id="profile" src="images/profile.jpg" alt="">
+						</div>
+						<div class="col-lg-9">
+							<h1>The name is Ethan Marsh</h1>
+							<p>I am a fullstack web developer by trade. I have recently graduated from Nova Scotia Community College and I am excited to show the industry what I am made of. I have worked extensivly with bootstrap.</p>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div id="GBFB" class="container">
+					<div class="row">
+						<div class="col-lg-5">
+							<img src="gbfbScreen.png" alt="" style="width:450px;height:350px;">
+						</div>
+			
+						<div class="col-lg-7">
+							<h1>The Glace Bay Food Bank</h1>
+							<p>This was a project assigned to myself and a team of other students at NSCC. We had to develop a website for a local foodbank. My responsibilities involved making sure the site looked good on mobile devices.</p>
+							<a href="http://glacebayfoodbank.seaside.ns.ca" class="btn btn-primary">Check it out</a>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
+
+<script type="text/javascript">
+$( document ).ready(function() {
+	$("#mainslide").on('slide.bs.carousel', function () {
+		
+	});
+});
+</script>
 </body>
 </html>
