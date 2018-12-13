@@ -11,16 +11,23 @@
 <body>
 <div class="container-fluid">
 <div class="row">
+	<div class="col">
+	</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
 	<div class="col-lg-2 bg-primary">
 		<ul class="nav flex-column">
 			<li class="nav-item">
-				<a id="0" class="nav-link sideLabel active" data-target="#mainslide" data-slide-to="0" >About Myself</a>
+				<a id="link-0" class="nav-link select" style="color:white;font-size:20px;">About Myself</a>
 			</li>
 			<li class="nav-item">
-				<a id="1" class="nav-link sideLabel" data-target="#mainslide" data-slide-to="1" >Glace Bay Food Bank</a>
+				<a id="link-1" class="nav-link">Glace Bay Food Bank</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link sideLabel" >Contact Me</a>
+				<a id="link-2" class="nav-link" >Contact Me</a>
 			</li>
 		</ul>
 	</div>
@@ -40,7 +47,7 @@
 		</div>-->
 		
 		
-		<div id="mainslide" class="carousel vert slide" data-ride="carousel">
+		<div id="mainslide" class="carousel vert slide">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<div class="container">
@@ -55,6 +62,7 @@
 					</div>
 					</div>
 				</div>
+				
 				<div class="carousel-item">
 					<div id="GBFB" class="container">
 					<div class="row">
@@ -70,6 +78,17 @@
 					</div>
 					</div>
 				</div>
+				
+				<div class="carousel-item">
+					<div class="container">
+					<div class="row">
+						<div class="col">
+							<h1>USE THIS EMAIL FAGGOT </h1>
+							<h3>EthanMarsh@mail.com</h3>
+						</div>
+					</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		
@@ -80,13 +99,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
-
-<script type="text/javascript">
-$( document ).ready(function() {
-	$("#mainslide").on('slide.bs.carousel', function () {
-		
-	});
-});
-</script>
+<!-- local javascript -->
+<script type="text/javascript" src="local.js"></script>
 </body>
 </html>
