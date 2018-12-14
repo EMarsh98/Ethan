@@ -12,10 +12,11 @@ body{
 	color:white;
 	font-size: 5em;
 	padding: 70px 0px 0px 30px;
+	position:fixed;
 }
 
-#main-content{
-	color:white;
+div p{
+	font-size:18px;
 }
 
 .carousel-item{
@@ -27,6 +28,20 @@ body{
 #profile{
 	height:200px;
 	width:200px;
+}
+
+
+/*Trends in IT*/
+#quote1{
+	position: relative;
+	bottom: 8px;
+	right: 4px;
+}
+
+#quote2{
+	position: relative;
+	bottom: 8px;
+	left: 4px;
 }
 
 /* vertical slider css*/
