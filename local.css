@@ -15,6 +15,25 @@ body{
 	position:fixed;
 }
 
+#sidemenu{
+	background-color:#130019;
+}
+
+#main-content{
+	overflow:hidden;
+	padding:0px;
+}
+
+.bgIMG{
+	position:absolute;
+	filter:brightness(20%);
+	transition:all 0.25s;
+}
+
+.seeThrough{
+	opacity:0;
+}
+
 div p{
 	font-size:18px;
 }
@@ -31,9 +50,11 @@ div p{
 }
 
 #profile{
-	height:200px;
-	width:200px;
+	height:350px;
+	width:350px;
 }
+
+/*Glace Bay Food Bank*/
 
 
 /*Trends in IT*/

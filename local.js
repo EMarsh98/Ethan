@@ -1,5 +1,7 @@
 $( document ).ready(function() {
-	var lName = "link-";
+	var bg1 = document.getElementById('bg1');
+	var bg2 = document.getElementById('bg2');
+	var bg3 = document.getElementById('bg3');
 	
 	var link1 = document.getElementById('link-0');
 	var link2 = document.getElementById('link-1');
@@ -13,6 +15,20 @@ $( document ).ready(function() {
 		interval: false,
 		arrows: false
 	});
+	
+	function checkBG(){
+		if(bg1.classList.contains('seeThrough') == false){
+			bg1.classList.add('seeThrough');
+		}
+		
+		if(bg2.classList.contains('seeThrough') == false){
+			bg2.classList.add('seeThrough');
+		}
+		
+		if(bg3.classList.contains('seeThrough') == false){
+			bg3.classList.add('seeThrough');
+		}
+	}
 	
 	function checkSelect(){
 		if(link1.classList.contains("select")){
@@ -29,21 +45,27 @@ $( document ).ready(function() {
 	}
 	
 	$('#link-0').click(function() {
+		checkBG();
 		checkSelect();
+		bg1.classList.remove('seeThrough');
 		link1.classList.add('select');
 		
 		$('#mainslide').carousel(0);
 	});
 	
 	$('#link-1').click(function() {
+		checkBG();
 		checkSelect();
+		bg2.classList.remove('seeThrough');
 		link2.classList.add('select');
 		
 		$('#mainslide').carousel(1);
 	});
 	
 	$('#link-2').click(function() {
+		checkBG();
 		checkSelect();
+		bg3.classList.remove('seeThrough');
 		link3.classList.add('select');
 		
 		$('#mainslide').carousel(2);
