@@ -25,6 +25,11 @@ div p{
 	color:white;
 }
 
+/*About Myself*/
+.btn-social i{
+	margin-top:6px;
+}
+
 #profile{
 	height:200px;
 	width:200px;
