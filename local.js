@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+	var main = document.getElementById('maincontain');
+	
 	var bg1 = document.getElementById('bg1');
 	var bg2 = document.getElementById('bg2');
 	var bg3 = document.getElementById('bg3');
@@ -6,14 +8,21 @@ $( document ).ready(function() {
 	var link1 = document.getElementById('link-0');
 	var link2 = document.getElementById('link-1');
 	var link3 = document.getElementById('link-2');
+	var link4 = document.getElementById('link-3');
 	
 	link1.style.transition = "font-size 0.25s";
 	link2.style.transition = "font-size 0.25s";
 	link3.style.transition = "font-size 0.25s";
+	link4.style.transition = "font-size 0.25s";
 	
 	$('#mainslide').carousel({
 		interval: false,
 		arrows: false
+	});
+	
+	$('#pop').click(function() {
+		move('#header h1').set('padding-top', '70px').end();
+		move('#maincontain').set('top', '50px').end();
 	});
 	
 	function checkBG(){
@@ -41,6 +50,10 @@ $( document ).ready(function() {
 		
 		if(link3.classList.contains("select")){
 			link3.classList.remove('select');
+		}
+		
+		if(link4.classList.contains("select")){
+			link4.classList.remove('select');
 		}
 	}
 	
@@ -71,6 +84,15 @@ $( document ).ready(function() {
 		$('#mainslide').carousel(2);
 	});
 	
+	$('#link-3').click(function() {
+		checkBG();
+		checkSelect();
+		bg3.classList.remove('seeThrough');
+		link4.classList.add('select');
+		
+		$('#mainslide').carousel(3);
+	});
+	
 	function switchTxt(link){
 		if(link.classList.contains('select')){
 			link.style.color = 'white';
@@ -86,5 +108,6 @@ $( document ).ready(function() {
 		switchTxt(link1);
 		switchTxt(link2);
 		switchTxt(link3);
+		switchTxt(link4);
 	});
 });
