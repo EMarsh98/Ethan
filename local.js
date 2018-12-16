@@ -10,10 +10,10 @@ $( document ).ready(function() {
 	var link3 = document.getElementById('link-2');
 	var link4 = document.getElementById('link-3');
 	
-	link1.style.transition = "font-size 0.25s";
-	link2.style.transition = "font-size 0.25s";
-	link3.style.transition = "font-size 0.25s";
-	link4.style.transition = "font-size 0.25s";
+	link1.style.transition = "all 0.25s";
+	link2.style.transition = "all 0.25s";
+	link3.style.transition = "all 0.25s";
+	link4.style.transition = "all 0.25s";
 	
 	$('#mainslide').carousel({
 		interval: false,
@@ -21,8 +21,8 @@ $( document ).ready(function() {
 	});
 	
 	$('#pop').click(function() {
-		move('#header h1').set('padding-top', '70px').end();
-		move('#maincontain').set('top', '50px').end();
+		move('#header h1').set('padding-top', '70px').ease('out').end();
+		move('#maincontain').set('top', '50px').ease('out').end();
 	});
 	
 	function checkBG(){

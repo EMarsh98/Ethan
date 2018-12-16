@@ -13,17 +13,17 @@ body{
 }
 
 #header i{
+	color:white;
 	font-size:150px;
 	position:absolute;
 	top:600px;
 	right:160px;
 	opacity: 0.3;
-	transition: all 1s;
+	transition: all 0.5s;
 }
 
 #header i:hover{
 	opacity:1;
-	color:white;
 }
 
 #maincontain{
@@ -62,7 +62,7 @@ div p{
 
 /*About Myself*/
 .btn-social i{
-	margin:6px 0px 0px 3px;
+	
 }
 
 #profile{
