@@ -4,6 +4,7 @@ $( document ).ready(function() {
 	var bg1 = document.getElementById('bg1');
 	var bg2 = document.getElementById('bg2');
 	var bg3 = document.getElementById('bg3');
+	var bg4 = document.getElementById('bg4');
 	
 	var link1 = document.getElementById('link-0');
 	var link2 = document.getElementById('link-1');
@@ -36,6 +37,10 @@ $( document ).ready(function() {
 		
 		if(bg3.classList.contains('seeThrough') == false){
 			bg3.classList.add('seeThrough');
+		}
+		
+		if(bg4.classList.contains('seeThrough') == false){
+			bg4.classList.add('seeThrough');
 		}
 	}
 	
@@ -87,7 +92,7 @@ $( document ).ready(function() {
 	$('#link-3').click(function() {
 		checkBG();
 		checkSelect();
-		bg3.classList.remove('seeThrough');
+		bg4.classList.remove('seeThrough');
 		link4.classList.add('select');
 		
 		$('#mainslide').carousel(3);
