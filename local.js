@@ -9,12 +9,12 @@ $( document ).ready(function() {
 	var link1 = document.getElementById('link-0');
 	var link2 = document.getElementById('link-1');
 	var link3 = document.getElementById('link-2');
-	var link4 = document.getElementById('link-3');
+	//var link4 = document.getElementById('link-3');
 	
 	link1.style.transition = "all 0.25s";
 	link2.style.transition = "all 0.25s";
 	link3.style.transition = "all 0.25s";
-	link4.style.transition = "all 0.25s";
+	//link4.style.transition = "all 0.25s";
 	
 	$('#mainslide').carousel({
 		interval: false,
@@ -57,9 +57,9 @@ $( document ).ready(function() {
 			link3.classList.remove('select');
 		}
 		
-		if(link4.classList.contains("select")){
-			link4.classList.remove('select');
-		}
+		//if(link4.classList.contains("select")){
+			//link4.classList.remove('select');
+		//}
 	}
 	
 	$('#link-0').click(function() {
@@ -89,14 +89,14 @@ $( document ).ready(function() {
 		$('#mainslide').carousel(2);
 	});
 	
-	$('#link-3').click(function() {
+	/*$('#link-3').click(function() {
 		checkBG();
 		checkSelect();
 		bg4.classList.remove('seeThrough');
 		link4.classList.add('select');
 		
 		$('#mainslide').carousel(3);
-	});
+	});*/
 	
 	function switchTxt(link){
 		if(link.classList.contains('select')){
@@ -113,6 +113,6 @@ $( document ).ready(function() {
 		switchTxt(link1);
 		switchTxt(link2);
 		switchTxt(link3);
-		switchTxt(link4);
+		//switchTxt(link4);
 	});
 });
